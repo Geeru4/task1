@@ -1,7 +1,7 @@
 function updateTime() {
-    let htmlHours = document.querySelector(".hours");
-    let htmlMinutes = document.querySelector(".minutes");
-    let htmlSeconds = document.querySelector(".seconds");
+    let jsHours = document.querySelector(".hours");
+    let jsMinutes = document.querySelector(".minutes");
+    let jsSeconds = document.querySelector(".seconds");
 
     const clock = new Date();
 
@@ -11,9 +11,9 @@ function updateTime() {
     clock.getMinutes();
     clock.getSeconds(); 
 
-    htmlHours.innerHTML = clock.getHours();
-    htmlMinutes.innerHTML = clock.getMinutes();
-    htmlSeconds.innerHTML = clock.getSeconds();
+    jsHours.innerHTML = clock.getHours();
+    jsMinutes.innerHTML = clock.getMinutes();
+    jsSeconds.innerHTML = clock.getSeconds();
 
 }
 // Здесь должен быть задан интервал
